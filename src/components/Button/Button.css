@@ -1,0 +1,34 @@
+.standard-button {
+    background: linear-gradient(to bottom right, rgb(78, 151, 247), rgb(119, 141, 202));
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.disabled {
+    background: linear-gradient(to bottom right, rgb(140, 152, 167), #7e8492);
+    cursor: not-allowed;
+}
+
+.standard-button:focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.502), .125rem .125rem 1rem rgba(255, 154, 90, 0.502);
+}
+
+.standard-button:hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #9cb2f0, .125rem .125rem 1rem #7282ad;
+}

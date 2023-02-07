@@ -1,0 +1,19 @@
+.textarea {
+    box-sizing: border-box;
+    background: white;
+    min-width: 200px;
+    min-height: 40px;
+    border-radius: 4px;
+    padding: 3px;
+    outline: none;
+    resize: none;
+}
+
+.allow-resize {
+    resize: both;
+}
+
+.description-disabled {
+    background: #e4e0e0;
+    cursor: not-allowed;
+}

@@ -1,0 +1,12 @@
+.confirm-input {
+    display: flex;
+    align-items: center;
+}
+
+.confirm-input div {
+    margin: 0 2.5px;   
+}
+
+.confirm-input div:hover {
+    cursor: pointer; 
+}
