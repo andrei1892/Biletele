@@ -1,0 +1,24 @@
+
+{
+    "teams": {
+        "team1": {
+            "membersCount": 0,
+            "nrOfMemberWords": 0,
+            "memberList": ["memberName1" , "memberName2"],
+            "memberName1": ["word1" , "word2"]
+        }
+        // ...
+    },
+    "words": [],
+    "phase": {
+        "one": {
+            "remainingWords": [],
+            "currentPlayer": "",
+            "points": {
+                "team1": 0
+                // ...
+            }
+        }
+    }
+    
+}

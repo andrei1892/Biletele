@@ -1,0 +1,66 @@
+
+.game-play {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phase-container {
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+}
+
+.inputWithLabel {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputWithLabel label {
+  margin-bottom: 6px;
+}
+
+ul {
+  margin: 0;
+  padding: 5px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.__react_component_tooltip  {
+  padding: 0 !important;
+  border: none !important;
+}
+
+.game-play {
+    animation-duration: 0.8s;
+    animation-name: animate-entrance;
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+    margin-top: 0%;
+}
+
+@keyframes animate-entrance {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+  
+}
+
+
+@media only screen and (max-height: 425px) {
+  .phase-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+  }
+}

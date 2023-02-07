@@ -1,0 +1,150 @@
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-menu {
+    width: 50vw;
+    min-height: 35vh;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.home-header {
+    text-align: center;
+  }
+
+.menu-option {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.menu-btn {
+    width: 110px;
+    background: linear-gradient(to bottom right, rgb(235, 183, 105), rgb(241, 146, 68));
+}
+
+.menu-btn:hover {
+    background: linear-gradient(to bottom right, rgb(236, 144, 68), rgb(224, 91, 38));
+}
+
+.menu-style {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: linear-gradient(
+        45deg,
+        #aadbf8 25%,
+        transparent 25%,
+        transparent 75%,
+        #aadbf8 75%,
+        #aadbf8
+      ),
+      linear-gradient(
+        -45deg,
+        #aadbf8 25%,
+        transparent 25%,
+        transparent 75%,
+        #aadbf8 75%,
+        #aadbf8
+      );
+    background-size: 20px 20px;
+    background-repeat: round round;
+    background-position: -10px -10px;
+  }
+
+  .menu-style:after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #aadbf8;
+    z-index: -1;
+}
+  
+.dialog-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background: #cbe1ee;
+    height: auto;
+    min-height: 20%;
+    max-height: 80%;
+    border: 5px ridge rgba(245, 141, 44, 0.856);
+    z-index: 1000;
+    width: 60%;
+    padding: 25px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background: rgba(187, 187, 187, 0.6);
+    z-index: 999;
+    opacity: 0.8;
+}
+
+
+
+.home-menu {
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes animate-fade {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+  @media only screen and (max-height: 425px) { 
+
+    .app {
+      background-color: rgb(255, 253, 227);
+    }
+
+    .home-menu {
+      width: 75vw;
+      min-height: 75vh;
+      opacity: 0.9;
+    }
+  }
